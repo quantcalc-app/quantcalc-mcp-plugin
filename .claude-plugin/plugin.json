@@ -1,0 +1,28 @@
+{
+  "name": "quantcalc",
+  "displayName": "QuantCalc Retirement Engine",
+  "version": "1.0.0",
+  "description": "Run real Monte Carlo retirement projections, tax-aware withdrawal ordering and capital-market-assumption comparisons on the QuantCalc engine, instead of estimating them.",
+  "author": {
+    "name": "QuantCalc",
+    "url": "https://quantcalc.app"
+  },
+  "homepage": "https://quantcalc.app/advisors/mcp/",
+  "license": "MIT",
+  "keywords": [
+    "retirement",
+    "monte-carlo",
+    "financial-planning",
+    "tax",
+    "projections"
+  ],
+  "userConfig": {
+    "license_key": {
+      "type": "string",
+      "title": "QuantCalc PRO licence key",
+      "description": "Optional. Without one, projections run at 2,000 paths. A PRO key raises runs to 10,000 paths and is held at the connection, never passed through the conversation.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

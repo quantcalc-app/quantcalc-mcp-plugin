@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.quantcalc/retirement-engine",
+  "title": "QuantCalc Retirement Engine",
+  "description": "Monte Carlo retirement projections on a real engine, with assumptions attached.",
+  "version": "1.0.1",
+  "websiteUrl": "https://quantcalc.app/advisors/mcp/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.quantcalc.app"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "quantcalc": {
+      "type": "http",
+      "url": "https://mcp.quantcalc.app",
+      "headers": {
+        "X-License-Key": "${user_config.license_key}"
+      }
+    }
+  }
+}
