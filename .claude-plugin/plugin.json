@@ -1,21 +1,27 @@
 {
   "name": "quantcalc",
   "displayName": "QuantCalc Retirement Engine",
-  "version": "1.0.0",
-  "description": "Run real Monte Carlo retirement projections, tax-aware withdrawal ordering and capital-market-assumption comparisons on the QuantCalc engine, instead of estimating them.",
+  "version": "1.1.0",
+  "description": "Run real Monte Carlo retirement projections and compare published capital market assumptions on the QuantCalc engine, instead of estimating them.",
   "author": {
     "name": "QuantCalc",
+    "email": "hello@quantcalc.app",
     "url": "https://quantcalc.app"
   },
   "homepage": "https://quantcalc.app/advisors/mcp/",
+  "repository": "https://github.com/quantcalc-app/quantcalc-mcp-plugin",
   "license": "MIT",
   "keywords": [
     "retirement",
     "monte-carlo",
     "financial-planning",
+    "financial-advisor",
+    "retirement-income",
     "tax",
+    "capital-market-assumptions",
     "projections"
   ],
+  "defaultEnabled": false,
   "userConfig": {
     "license_key": {
       "type": "string",

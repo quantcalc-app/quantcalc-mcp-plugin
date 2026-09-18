@@ -23,8 +23,7 @@ seen, failing with a generic signature error):
 quantcalc.app.  IN TXT  "v=MCPv1; k=ed25519; p=<base64 public key>"
 ```
 
-The private key lives at `~/agents_team/.credentials/mcp-registry-quantcalc.ed25519.pem`
-(git-crypt encrypted, mode 600). It is NOT in this repository. If it is ever
+The private key is held by the operator and is NOT in this repository. If it is ever
 rotated, delete the old apex TXT record — a stale one is tried first and breaks
 verification.
 
@@ -32,7 +31,7 @@ verification.
 
 ```bash
 # from a directory containing server.json
-KEY=~/agents_team/.credentials/mcp-registry-quantcalc.ed25519.pem
+KEY=/path/to/mcp-registry-quantcalc.ed25519.pem
 HEX="$(openssl pkey -in "$KEY" -outform DER | tail -c 32 | xxd -p -c 64)"
 mcp-publisher login dns --domain quantcalc.app --private-key "$HEX"
 mcp-publisher validate      # catches schema problems before the registry does

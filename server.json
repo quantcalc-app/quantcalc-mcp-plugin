@@ -3,8 +3,12 @@
   "name": "app.quantcalc/retirement-engine",
   "title": "QuantCalc Retirement Engine",
   "description": "Monte Carlo retirement projections on a real engine, with assumptions attached.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://quantcalc.app/advisors/mcp/",
+  "repository": {
+    "url": "https://github.com/quantcalc-app/quantcalc-mcp-plugin",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
