@@ -25,10 +25,10 @@ tool's figure as after tax.
 
 Report the tax-aware result in this order, in the tool's own words: the
 recommended order and any conversion programme; the advantage sentence exactly
-as returned (it is one of five carefully different sentences — "close on these
-paths", "pays more along the way but comes out ahead", and so on — and
-paraphrasing it into "saves $X in tax" can turn a true sentence into a false
-one); the "Assumed because not given" line; the "Not modelled" line. A
+as returned (the tool chooses between several carefully different sentences
+depending on what the run actually showed, and it explains itself with a
+breakdown whose parts sum to the advantage; paraphrasing any of them into
+"saves $X in tax" can turn a true sentence into a false one); the "Assumed because not given" line; the "Not modelled" line. A
 recommendation whose advantage is inside the stated range's downside is a
 comparison of close alternatives, not a finding.
 
