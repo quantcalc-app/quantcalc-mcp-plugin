@@ -1,8 +1,8 @@
 {
   "name": "quantcalc",
   "displayName": "QuantCalc Retirement Engine",
-  "version": "1.1.0",
-  "description": "Run real Monte Carlo retirement projections and compare published capital market assumptions on the QuantCalc engine, instead of estimating them.",
+  "version": "1.2.0",
+  "description": "Run real Monte Carlo retirement projections, get the tax-aware withdrawal order and Roth-conversion programme the engine selects, and compare published capital market assumptions — computed on the QuantCalc engine, not estimated.",
   "author": {
     "name": "QuantCalc",
     "email": "hello@quantcalc.app",
@@ -26,7 +26,7 @@
     "license_key": {
       "type": "string",
       "title": "QuantCalc PRO licence key",
-      "description": "Optional. Without one, projections run at 2,000 paths. A PRO key raises runs to 10,000 paths and is held at the connection, never passed through the conversation.",
+      "description": "Optional. Without one, projections run at 2,000 paths and the tax-aware tool returns the first three retirement years of its schedule. A PRO key raises runs to 10,000 paths and returns the full schedule; it is held at the connection, never passed through the conversation.",
       "sensitive": true,
       "required": false
     }

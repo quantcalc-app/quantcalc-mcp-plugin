@@ -37,11 +37,12 @@ https://mcp.quantcalc.app
 | Tool | Returns |
 |---|---|
 | `run_retirement_projection` | Success rate, ending-portfolio distribution, and the assumptions that produced them |
+| `run_tax_aware_projection` | The recommended withdrawal order and Roth-conversion programme, its present-value advantage and range against traditional-first, and the after-tax success rate, with federal and state tax, RMDs, IRMAA and Social Security taxation paid from the portfolio |
 | `compare_return_assumptions` | The same plan under each published capital market assumption set |
 | `list_return_assumption_sources` | Which assumption sets the engine carries, and what each publisher provides |
 | `explain_methodology` | What the engine models and what it deliberately leaves out |
 
-All four are read-only: they compute and return, and change nothing. Inputs are
+All five are read-only: they compute and return, and change nothing. Inputs are
 not kept after the run, except that a failed request is kept for two days to
 diagnose it.
 
@@ -54,14 +55,20 @@ caveat it was not handed explicitly. So each result states:
 - the number of paths and the real trial count behind the rate;
 - the income it assumed, **including when it assumed none**;
 - whether a correlation matrix had to be adjusted before running;
-- a plain warning when a run is not precise enough to show a client.
+- a plain warning when a run is not precise enough to show a client;
+- for the tax-aware tool: the spending convention (after tax — what the household
+  keeps), every default assumed for an input that was not given, and the tax
+  items the engine does not model.
 
 ## Licence key
 
-Optional. Without one, projections run at 2,000 paths, which puts the 95%
-interval around a success rate at about ±1.5 points. A QuantCalc PRO key raises
-that to 10,000 paths (about ±0.7). The same key unlocks the portfolio optimizer,
-glide paths, custom capital market assumptions and multi-period planning in the
+Optional. Without one, projections run at 2,000 paths (the 95% interval around a
+success rate is about ±1.5 points) and the tax-aware tool returns the first
+three retirement years of its year-by-year schedule. A QuantCalc PRO key raises
+that to 10,000 paths (about ±0.7) and returns the full schedule. The tax engine
+itself — withdrawal order, Roth conversions, state tax — needs no key. The same
+key also unlocks the portfolio optimizer, glide paths, custom capital market
+assumptions and multi-period planning in the
 [QuantCalc app](https://quantcalc.app/app.html). Those features are not tools in
 this plugin.
 
