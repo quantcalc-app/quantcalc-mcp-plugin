@@ -19,8 +19,8 @@ When the plugin is enabled, it asks for a QuantCalc PRO licence key. It is
 optional and can be left blank.
 
 - **Without a key:** each run uses 2,000 paths, each installation gets 40 runs a
-  day (15 an hour), and the tax-aware tool returns the first three retirement
-  years of its schedule. A tax-aware run counts as one run.
+  day (15 an hour), and the tax-aware tool returns the first retirement
+  year of its schedule. A tax-aware run counts as one run.
 - **With a key:** each run uses 10,000 paths and the tax-aware tool returns the
   full year-by-year schedule.
 

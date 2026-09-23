@@ -64,7 +64,7 @@ caveat it was not handed explicitly. So each result states:
 
 Optional. Without one, projections run at 2,000 paths (the 95% interval around a
 success rate is about ±1.5 points) and the tax-aware tool returns the first
-three retirement years of its year-by-year schedule. A QuantCalc PRO key raises
+retirement year of its year-by-year schedule. A QuantCalc PRO key raises
 that to 10,000 paths (about ±0.7) and returns the full schedule. The tax engine
 itself — withdrawal order, Roth conversions, state tax — needs no key. The same
 key also unlocks the portfolio optimizer, glide paths, custom capital market
