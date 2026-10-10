@@ -32,6 +32,17 @@ breakdown whose parts sum to the advantage; paraphrasing any of them into
 recommendation whose advantage is inside the stated range's downside is a
 comparison of close alternatives, not a finding.
 
+## A 2026 tax return estimate
+
+When the question is *what will I owe or get back for 2026*, *what will my
+return look like*, or a line of this year's Form 1040, use
+`estimate_2026_tax_return`. It needs a licence key; without one, say so and give
+the free calculator link it returns. It is an estimate for the 2026 tax year,
+not a filed return and not tax advice — say that. Relay its "assumed because not
+given" defaults and its not-modelled items with the refund or amount owed, and
+ask for withholding and estimated payments before quoting a refund: without
+them the result treats nothing as already paid.
+
 ## Carry the assumptions with the number
 
 Every result states the model that ran, the number of paths, and the income it

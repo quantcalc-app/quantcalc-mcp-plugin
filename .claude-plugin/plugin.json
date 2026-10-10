@@ -1,8 +1,8 @@
 {
   "name": "quantcalc",
   "displayName": "QuantCalc Retirement Engine",
-  "version": "1.2.1",
-  "description": "Run real Monte Carlo retirement projections, get the tax-aware withdrawal order and Roth-conversion programme the engine selects, and compare published capital market assumptions — computed on the QuantCalc engine, not estimated.",
+  "version": "1.3.0",
+  "description": "Run real Monte Carlo retirement projections, get the tax-aware withdrawal order and Roth-conversion programme the engine selects, compare published capital market assumptions, and estimate a 2026 federal and state tax return (licence key) — computed on the QuantCalc engine, not estimated by the model.",
   "author": {
     "name": "QuantCalc",
     "email": "hello@quantcalc.app",

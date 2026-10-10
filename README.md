@@ -41,8 +41,9 @@ https://mcp.quantcalc.app
 | `compare_return_assumptions` | The same plan under each published capital market assumption set |
 | `list_return_assumption_sources` | Which assumption sets the engine carries, and what each publisher provides |
 | `explain_methodology` | What the engine models and what it deliberately leaves out |
+| `estimate_2026_tax_return` | A 2026 federal and state return estimate: the refund or amount owed, the main Form 1040 lines, the state tax, every default assumed and what is not modelled. **Needs a QuantCalc PRO or Tax Season Pass licence key** |
 
-All five are read-only: they compute and return, and change nothing. Inputs are
+All six are read-only: they compute and return, and change nothing. Inputs are
 not kept after the run, except that a failed request is kept for two days to
 diagnose it.
 
@@ -66,7 +67,10 @@ Optional. Without one, projections run at 2,000 paths (the 95% interval around a
 success rate is about ±1.5 points) and the tax-aware tool returns the first
 retirement year of its year-by-year schedule. A QuantCalc PRO key raises
 that to 10,000 paths (about ±0.7) and returns the full schedule. The tax engine
-itself — withdrawal order, Roth conversions, state tax — needs no key. The same
+itself — withdrawal order, Roth conversions, state tax — needs no key. The one
+exception is `estimate_2026_tax_return`, which needs a PRO or Tax Season Pass
+key (without one it returns nothing and points to the free web calculator at
+<https://quantcalc.app/2026-tax-return-calculator/>). The same
 key also unlocks the portfolio optimizer, glide paths, custom capital market
 assumptions and multi-period planning in the
 [QuantCalc app](https://quantcalc.app/app.html). Those features are not tools in

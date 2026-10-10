@@ -7,6 +7,8 @@
    tax-aware run counts as one run. A key raises each run to 10,000 paths. The
    key is kept in your system keychain and sent to the server as a connection
    header, never through the conversation.
+   The 2026 return estimate tool (`estimate_2026_tax_return`) works only with a
+   PRO or Tax Season Pass key; every other tool runs without one.
 3. Ask Claude something that needs a real projection, for example: *"I'm 58
    with $1.4M, retiring at 63 on $80k a year, with $32k of Social Security at
    67. What's the chance the money lasts to 95?"*
