@@ -32,6 +32,25 @@ breakdown whose parts sum to the advantage; paraphrasing any of them into
 recommendation whose advantage is inside the stated range's downside is a
 comparison of close alternatives, not a finding.
 
+## A move to another state
+
+When the household plans to move, pass `move_state` to
+`run_tax_aware_projection` (`state` moved to, `year`, optional `month`, default
+July), with `state` the one it lives in now. The result compares the lifetime
+state tax with the move against staying and against moving now; quote that
+comparison as returned, with its assumptions.
+
+## Which state taxes this income least
+
+When the question is *which states would tax my retirement income least* or
+*what would I pay in another state this year*, use `state_tax_in_every_state`
+with the household's 2026 income (and `current_state` for the difference from
+where it lives now). It needs a licence key; without one, say so and give the
+free page link it returns. It is one year (2026) of state income tax only — not
+property, sales or estate tax, and not a projection; for a lifetime answer use
+`run_tax_aware_projection` with `move_state`. Relay its county-tax note and its
+"assumed because not given" defaults with the ranking.
+
 ## A 2026 tax return estimate
 
 When the question is *what will I owe or get back for 2026*, *what will my
@@ -82,7 +101,7 @@ about.
 ## Say what is out of scope
 
 `explain_methodology` returns what the engine models and what it deliberately
-does not — AMT, the 199A deduction, NUA and estate tax among them. The
+does not — the 199A deduction, NUA and estate tax among them. The
 tax-aware result already carries this same not-modelled list in its own text,
 so relay it from there rather than calling `explain_methodology` again when a
 tax-aware run is what produced the number. If a question depends on something

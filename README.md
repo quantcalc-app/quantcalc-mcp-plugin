@@ -37,13 +37,15 @@ https://mcp.quantcalc.app
 | Tool | Returns |
 |---|---|
 | `run_retirement_projection` | Success rate, ending-portfolio distribution, and the assumptions that produced them |
-| `run_tax_aware_projection` | The recommended withdrawal order and Roth-conversion programme, its present-value advantage and range against traditional-first, and the after-tax success rate, with federal and state tax, RMDs, IRMAA and Social Security taxation paid from the portfolio |
+| `run_tax_aware_projection` | The recommended withdrawal order and Roth-conversion programme, its present-value advantage and range against traditional-first, and the after-tax success rate, with federal and state tax, RMDs, IRMAA and Social Security taxation paid from the portfolio. With `move_state` (`state`, `year`, `month`) it plans a move to another state: the old state's tax before the move year, a part-year return in each state in the move year, the new state's after it, and the lifetime state tax compared with staying and with moving now |
 | `compare_return_assumptions` | The same plan under each published capital market assumption set |
 | `list_return_assumption_sources` | Which assumption sets the engine carries, and what each publisher provides |
 | `explain_methodology` | What the engine models and what it deliberately leaves out |
 | `estimate_2026_tax_return` | A 2026 federal and state return estimate: the refund or amount owed, the main Form 1040 lines, the state tax, every default assumed and what is not modelled. **Needs a QuantCalc PRO or Tax Season Pass licence key** |
+| `optimize_social_security_claiming` | The tax-aware plan run at every Social Security claiming age from 62 to 70 on the same simulated markets: each age's success rate and median paired difference against the plan, and the best age with its 10th–90th percentile range. **Needs a QuantCalc PRO licence key** |
+| `state_tax_in_every_state` | One household's 2026 state income tax in all 50 states and DC, ranked from lowest to highest, with each state's difference from the state it lives in now, the federal tax (the same in every state), the county taxes included, every default assumed and what is not modelled. **Needs a QuantCalc PRO or Tax Season Pass licence key** |
 
-All six are read-only: they compute and return, and change nothing. Inputs are
+All eight are read-only: they compute and return, and change nothing. Inputs are
 not kept after the run, except that a failed request is kept for two days to
 diagnose it.
 
@@ -60,6 +62,9 @@ caveat it was not handed explicitly. So each result states:
 - for the tax-aware tool: the spending convention (after tax — what the household
   keeps), every default assumed for an input that was not given, and the tax
   items the engine does not model.
+- for the every-state ranking: the engine versions, the federal tax it used for
+  every state, the county taxes the state figures include, and every default
+  assumed (spouse's age, how a couple's income is split, a private pension).
 
 ## Licence key
 
@@ -67,10 +72,13 @@ Optional. Without one, projections run at 2,000 paths (the 95% interval around a
 success rate is about ±1.5 points) and the tax-aware tool returns the first
 retirement year of its year-by-year schedule. A QuantCalc PRO key raises
 that to 10,000 paths (about ±0.7) and returns the full schedule. The tax engine
-itself — withdrawal order, Roth conversions, state tax — needs no key. The one
-exception is `estimate_2026_tax_return`, which needs a PRO or Tax Season Pass
-key (without one it returns nothing and points to the free web calculator at
-<https://quantcalc.app/2026-tax-return-calculator/>). The same
+itself — withdrawal order, Roth conversions, state tax — needs no key. Three
+tools need a key: `estimate_2026_tax_return` and `state_tax_in_every_state`
+run on the licensed federal and state tax APIs and need a PRO or Tax Season
+Pass key (without one they return nothing and point to the free web pages,
+<https://quantcalc.app/2026-tax-return-calculator/> and
+<https://quantcalc.app/best-states-to-retire-for-taxes/>), and
+`optimize_social_security_claiming` needs a PRO key. The same
 key also unlocks the portfolio optimizer, glide paths, custom capital market
 assumptions and multi-period planning in the
 [QuantCalc app](https://quantcalc.app/app.html). Those features are not tools in
