@@ -26,6 +26,10 @@
    *"Married, 67 and 64, $42k Social Security, $70k IRA withdrawals and a
    $40k state pension: which states would tax us least in 2026?"* (with a key)
 
+   *"Single, 45, $30k of military retirement pay and $60k of wages: which
+   states tax my military pension, and how much?"* (with a key; the tool's
+   `military_pension`)
+
 There is no account and no sign-in. To use the server without the plugin, add
 `https://mcp.quantcalc.app` as a custom connector (streamable HTTP).
 

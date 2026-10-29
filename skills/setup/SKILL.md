@@ -40,7 +40,7 @@ configuration.
 | `explain_methodology` | What the engine models and what it leaves out |
 | `estimate_2026_tax_return` | A 2026 federal and state return estimate (refund or amount owed, main Form 1040 lines, state tax); needs a PRO or Tax Season Pass key |
 | `optimize_social_security_claiming` | The tax-aware plan at every claiming age from 62 to 70 on the same markets, and the best age with its range; needs a PRO key |
-| `state_tax_in_every_state` | One household's 2026 state income tax in all 50 states and DC, ranked, with each state's difference from the current one; needs a PRO or Tax Season Pass key |
+| `state_tax_in_every_state` | One household's 2026 state income tax in all 50 states and DC, ranked, with each state's difference from the current one; military retirement pay goes in `military_pension`, so each state applies its own military rule; needs a PRO or Tax Season Pass key |
 
 All eight are read-only and store nothing about the user.
 

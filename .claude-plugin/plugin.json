@@ -1,7 +1,7 @@
 {
   "name": "quantcalc",
   "displayName": "QuantCalc Retirement Engine",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Run real Monte Carlo retirement projections, get the tax-aware withdrawal order and Roth-conversion programme the engine selects, compare published capital market assumptions, estimate a 2026 federal and state tax return and rank one household's 2026 state tax in all 50 states and DC (both with a licence key) — computed on the QuantCalc engine, not estimated by the model.",
   "author": {
     "name": "QuantCalc",

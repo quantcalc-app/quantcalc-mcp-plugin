@@ -51,6 +51,16 @@ property, sales or estate tax, and not a projection; for a lifetime answer use
 `run_tax_aware_projection` with `move_state`. Relay its county-tax note and its
 "assumed because not given" defaults with the ranking.
 
+Military retirement pay goes in `military_pension`, never in `pension`: the
+federal return taxes it like any pension, but many states exempt it in full or
+in part (a cap, an age test or a credit) beyond what they allow other pensions,
+and only `military_pension` reaches each state's military rule. Put a civilian
+or government pension the same household also receives in `pension` (with
+`pension_type`). On a joint return `military_pension` follows `spouse_split`
+with the withdrawals, pension and wages (one setting moves them all): when one
+spouse is the retiree and most of the income is theirs, `filer` or `spouse`
+puts it in that person's name; say which split ran when you quote a state.
+
 ## A 2026 tax return estimate
 
 When the question is *what will I owe or get back for 2026*, *what will my
