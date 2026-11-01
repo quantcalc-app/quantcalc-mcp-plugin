@@ -1,6 +1,6 @@
 ---
 name: retirement-projections
-description: Use when working on a retirement plan, a withdrawal strategy, a safe spending figure or a portfolio's chance of lasting — anything where a success rate, a sustainable withdrawal, or the effect of return assumptions is being discussed.
+description: How QuantCalc retirement projections are run and reported — success rates, sustainable withdrawals, the tax-aware withdrawal order and Roth-conversion programme, Social Security claiming, a move between states and the effect of published return assumptions — with the assumptions and margin of error that go with each number. Relevant to a retirement plan, a withdrawal strategy, a safe spending figure or a portfolio's chance of lasting.
 ---
 
 # Retirement projections
@@ -71,6 +71,15 @@ not a filed return and not tax advice — say that. Relay its "assumed because n
 given" defaults and its not-modelled items with the refund or amount owed, and
 ask for withholding and estimated payments before quoting a refund: without
 them the result treats nothing as already paid.
+
+## One-year tax questions
+
+A single 2026 figure — the RMD, the tax a Roth conversion adds this year, a QCD
+against a cash gift, the IRMAA tier, the taxable part of Social Security, the
+ACA cliff — has its own tool (`calculate_rmd`, `roth_conversion_tax_cost`,
+`qcd_tax_savings`, `irmaa_check`, `social_security_taxable_amount`,
+`aca_premium_tax_credit`); the `tax-calculations` skill maps them. Those answer
+one year; `run_tax_aware_projection` answers the whole retirement.
 
 ## Carry the assumptions with the number
 
