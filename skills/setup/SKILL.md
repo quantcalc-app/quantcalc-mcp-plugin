@@ -52,6 +52,9 @@ configuration.
 | `calculate_2026_income_tax` | Licence | 2026 federal and state income tax, payroll tax, effective and marginal rates, take-home pay, and the refund or amount owed given withholding |
 | `pretax_contribution_savings` | Licence | Tax saved by a health FSA or HSA contribution, 2026 or projected 2027 |
 | `business_deduction_tax_savings` | Licence | Tax saved by a self-employed business deduction (2026 business miles or a dollar expense) |
+| `retirement_plan_deferral_savings` | Free limit; licence for the tax | A 401(k)/403(b)/457(b)/TSP/SIMPLE limit at an age, 2026 or projected 2027; with a key, the income tax a contribution saves (no payroll tax saved) |
+| `ira_deduction_and_roth_limit` | Free worksheets; licence for the tax | The deductible part of a traditional IRA contribution and the Roth limit at a MAGI (Pub. 590-A); with a key, the tax the deduction saves |
+| `standard_deduction_vs_itemizing` | Free deduction; licence for the comparison | The standard deduction piece by piece; with a key, itemized vs standard and the tax difference |
 | `calculate_rmd` | Free RMD; licence for the tax | The 2026 or 2027 RMD, deadline, start age and a projection; with filing status and other income, the tax the RMD adds |
 | `roth_conversion_tax_cost` | Licence | The federal and state tax a 2026 Roth conversion adds, bracket and IRMAA room, torpedo and phase-out flags |
 | `qcd_tax_savings` | Licence | Tax and IRMAA saved by giving through a QCD instead of cash |
@@ -61,7 +64,7 @@ configuration.
 | `estimated_tax_payments_2026` | Licence | The 2026 safe-harbor payment, due dates and Form 2210 penalty |
 | `aca_premium_tax_credit` | Free 2027 benchmark and cliff; licence for the credit | The ACA benchmark, poverty-line percentage, 400% cliff and headroom; the premium tax credit with a key |
 
-All nineteen are read-only and store nothing about the user.
+All twenty-two are read-only and store nothing about the user.
 
 ## Troubleshooting
 

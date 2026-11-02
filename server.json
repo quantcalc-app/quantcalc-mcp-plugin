@@ -3,7 +3,7 @@
   "name": "app.quantcalc/retirement-engine",
   "title": "QuantCalc Retirement Engine",
   "description": "Retirement Monte Carlo, tax-aware withdrawals, 2026 tax calculators, RMD, IRMAA, every-state tax.",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "websiteUrl": "https://quantcalc.app/advisors/mcp/",
   "repository": {
     "url": "https://github.com/quantcalc-app/quantcalc-mcp-plugin",

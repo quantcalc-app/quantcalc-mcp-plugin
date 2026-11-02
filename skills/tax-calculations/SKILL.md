@@ -1,6 +1,6 @@
 ---
 name: tax-calculations
-description: How the QuantCalc connector's 2026 tax tools map to everyday tax questions — a return or refund estimate, income tax and take-home pay, FSA/HSA and business-deduction savings, RMDs, Roth conversion cost, QCDs, IRMAA tiers, taxable Social Security, capital gains and loss harvesting, estimated payments and the ACA premium tax credit — which of them are free and which need a licence, and what to carry with each figure. Relevant whenever a tax amount for 2026 (or 2027 coverage or premiums) is being discussed.
+description: How the QuantCalc connector's 2026 tax tools map to everyday tax questions — a return or refund estimate, income tax and take-home pay, FSA/HSA, 401(k)/IRA and business-deduction savings, IRA deduction and Roth limits, standard deduction vs itemizing, RMDs, Roth conversion cost, QCDs, IRMAA tiers, taxable Social Security, capital gains and loss harvesting, estimated payments and the ACA premium tax credit — which of them are free and which need a licence, and what to carry with each figure. Relevant whenever a tax amount for 2026 (or 2027 coverage or premiums) is being discussed.
 ---
 
 # 2026 tax calculations
@@ -19,6 +19,9 @@ engines and reports the difference, so quote what it returns.
 | Income tax, payroll tax, take-home pay, refund from withholding; overtime and tips deductions; dependents | `calculate_2026_income_tax` | Licence |
 | What an FSA or HSA contribution saves (2026, or projected 2027) | `pretax_contribution_savings` | Licence |
 | What business miles or a business expense save a self-employed person | `business_deduction_tax_savings` | Licence |
+| A 401(k), 403(b), 457(b), TSP or SIMPLE limit at my age; what a contribution saves in tax | `retirement_plan_deferral_savings` | Limit free; the tax saved: licence |
+| Can I deduct my traditional IRA contribution; how much can I put in a Roth at my income | `ira_deduction_and_roth_limit` | Worksheets free given MAGI; the tax saved: licence |
+| My standard deduction; should I itemize | `standard_deduction_vs_itemizing` | The deduction free; the comparison: licence |
 | How much is my required minimum distribution | `calculate_rmd` | Free (the tax on it: licence) |
 | What a Roth conversion costs this year, and how much bracket or IRMAA room is left | `roth_conversion_tax_cost` | Licence |
 | A QCD or a cash gift to charity | `qcd_tax_savings` | Licence |
