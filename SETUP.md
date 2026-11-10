@@ -10,7 +10,8 @@
    The 2026 tax tools — the return estimate, the every-state ranking, the
    income-tax, FSA/HSA, business-deduction, Roth-conversion, QCD, taxable
    Social Security, capital-gains and estimated-payment calculators, the tax
-   on an RMD and the ACA credit — work only with a PRO or Tax Season Pass key,
+   on an RMD and the ACA credit — work only with a PRO or Tax Season Pass key
+   (the connector lists them only when a key is set),
    and the Social Security claiming search
    (`optimize_social_security_claiming`) only with a PRO key. The projections,
    `irmaa_check`, the RMD itself and the 2027 ACA benchmark and cliff run

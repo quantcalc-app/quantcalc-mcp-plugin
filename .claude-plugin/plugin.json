@@ -1,7 +1,7 @@
 {
   "name": "quantcalc",
   "displayName": "QuantCalc Retirement Engine",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Run real Monte Carlo retirement projections, get the tax-aware withdrawal order and Roth-conversion programme the engine selects, compare published capital market assumptions, and compute 2026 tax figures — a federal and state return estimate, income tax and take-home pay, RMDs, Roth conversion cost, QCDs, IRMAA tiers, taxable Social Security, capital gains, estimated payments, the ACA credit and state tax in every state — on the QuantCalc engines, not estimated by the model. The projections, IRMAA tiers, RMDs and the 2027 ACA cliff are free; the tax figures need a licence key.",
   "author": {
     "name": "QuantCalc",

@@ -33,9 +33,10 @@ engines and reports the difference, so quote what it returns.
 | State income tax in every state, ranked | `state_tax_in_every_state` | Licence |
 
 "Licence" means a connected QuantCalc PRO licence or Tax Season Pass. Without
-one the tool computes nothing and its reply names the free web page that
-answers the same question; relay that, rather than estimating the figure in its
-place. A multi-year question — which account to draw first, a conversion
+one the connector does not list the tool (a tool that is free in part is listed
+for its free part). Say that the figure needs a licence and point to the free
+calculators at <https://quantcalc.app/tools/>, rather than estimating the
+figure in its place. A multi-year question — which account to draw first, a conversion
 programme, a move between states — belongs to `run_tax_aware_projection`
 (see the `retirement-projections` skill), not to a one-year calculator.
 

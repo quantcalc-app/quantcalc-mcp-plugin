@@ -45,8 +45,9 @@ comparison as returned, with its assumptions.
 When the question is *which states would tax my retirement income least* or
 *what would I pay in another state this year*, use `state_tax_in_every_state`
 with the household's 2026 income (and `current_state` for the difference from
-where it lives now). It needs a licence key; without one, say so and give the
-free page link it returns. It is one year (2026) of state income tax only — not
+where it lives now). It needs a licence key and is not listed without one; say
+so and give the free page,
+<https://quantcalc.app/best-states-to-retire-for-taxes/>. It is one year (2026) of state income tax only — not
 property, sales or estate tax, and not a projection; for a lifetime answer use
 `run_tax_aware_projection` with `move_state`. Relay its county-tax note and its
 "assumed because not given" defaults with the ranking.
@@ -65,8 +66,9 @@ puts it in that person's name; say which split ran when you quote a state.
 
 When the question is *what will I owe or get back for 2026*, *what will my
 return look like*, or a line of this year's Form 1040, use
-`estimate_2026_tax_return`. It needs a licence key; without one, say so and give
-the free calculator link it returns. It is an estimate for the 2026 tax year,
+`estimate_2026_tax_return`. It needs a licence key and is not listed without
+one; say so and give the free calculator,
+<https://quantcalc.app/2026-tax-return-calculator/>. It is an estimate for the 2026 tax year,
 not a filed return and not tax advice — say that. Relay its "assumed because not
 given" defaults and its not-modelled items with the refund or amount owed, and
 ask for withholding and estimated payments before quoting a refund: without

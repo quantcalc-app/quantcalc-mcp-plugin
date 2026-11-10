@@ -24,8 +24,9 @@ optional and can be left blank.
 - **With a key:** each run uses 10,000 paths and the tax-aware tool returns the
   full year-by-year schedule.
 - **The 2026 tax tools** run on QuantCalc's licensed federal and state tax APIs
-  and need a PRO or Tax Season Pass key; without one they compute nothing and
-  name the free web page for the same question. `irmaa_check`, the RMD in
+  and need a PRO or Tax Season Pass key; without one the connector does not
+  list them, and lists the partly free tools for their free part only (eleven
+  tools in all; twenty-two with a key). `irmaa_check`, the RMD in
   `calculate_rmd` and the 2027 benchmark, cliff and headroom in
   `aca_premium_tax_credit` are free. `optimize_social_security_claiming` needs
   a PRO key.
@@ -37,7 +38,8 @@ configuration.
 
 ## What the tools do
 
-"Free" runs without a key; "Licence" needs a PRO or Tax Season Pass key.
+"Free" runs without a key; "Licence" needs a PRO or Tax Season Pass key and is
+listed only when a key is configured.
 
 | Tool | Key | What it returns |
 |---|---|---|
@@ -80,10 +82,14 @@ All twenty-two are read-only and store nothing about the user.
   greater than zero"** or **"state must be a two-letter US state code"**: the
   tax-aware tool validates before running; ask for the missing figure or the
   state and call again.
-- **"Nothing was computed"** from a 2026 tax tool: no key is configured (or
-  it was refused); the tool runs on the licensed tax APIs and needs a PRO or
-  Tax Season Pass key. Say so, and point to the free page the message names;
-  the free tools still work. `calculate_rmd` still returns the RMD and
+- **A tax tool is missing from the list.** No key is configured: the tools that
+  need a PRO or Tax Season Pass key are listed only with one. Say so, and point
+  to the free calculators at <https://quantcalc.app/tools/>; the free tools
+  still work.
+- **"Nothing was computed"** from a tax tool: the configured key was refused;
+  the tool runs on the licensed tax APIs and needs a PRO or Tax Season Pass
+  key. Say so, and point to the free page the message names; the free tools
+  still work. `calculate_rmd` still returns the RMD and
   `aca_premium_tax_credit` the 2027 benchmark and cliff without a key; only the
   tax and the credit are left out. `optimize_social_security_claiming` needs a
   PRO key.
